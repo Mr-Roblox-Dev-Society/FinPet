@@ -1,0 +1,151 @@
+{
+ "works": [
+  {
+   "id": "w01",
+   "title": "Построить дом",
+   "description": "Помоги построить игрушечный дом.",
+   "difficulty": "HARD",
+   "isPhysical": true
+  },
+  {
+   "id": "w02",
+   "title": "Поработать в столовой",
+   "description": "Разложи тарелки и помоги накрыть стол.",
+   "difficulty": "MEDIUM",
+   "isPhysical": true
+  },
+  {
+   "id": "w03",
+   "title": "Скосить поле",
+   "description": "Убери высокую траву на поле.",
+   "difficulty": "HARD",
+   "isPhysical": true
+  },
+  {
+   "id": "w04",
+   "title": "Выкопать картошку",
+   "description": "Помоги выкопать картошку сельским жителям.",
+   "difficulty": "MEDIUM",
+   "isPhysical": true
+  },
+  {
+   "id": "w05",
+   "title": "Разобрать коробки",
+   "description": "Разложи вещи по коробкам.",
+   "difficulty": "EASY",
+   "isPhysical": true
+  },
+  {
+   "id": "w06",
+   "title": "Нарисовать афишу",
+   "description": "Придумай яркий рисунок для праздника.",
+   "difficulty": "MEDIUM",
+   "isPhysical": false
+  },
+  {
+   "id": "w07",
+   "title": "Помыть машину",
+   "description": "Нужно помыть красивую синюю машину.",
+   "difficulty": "HARD",
+   "isPhysical": true
+  },
+  {
+   "id": "w08",
+   "title": "Убрать снег",
+   "description": "Нужно почистить дорожки во дворе от снега.",
+   "difficulty": "EASY",
+   "isPhysical": true
+  },
+  {
+   "id": "w09",
+   "title": "Приготовить пирог",
+   "description": "Нужно приготовить пирог для совместного чаепития.",
+   "difficulty": "MEDIUM",
+   "isPhysical": false
+  },
+  {
+   "id": "w10",
+   "title": "Помыть окна",
+   "description": "Помой панорамные окна в офисном центре.",
+   "difficulty": "EASY",
+   "isPhysical": true
+  },
+  {
+   "id": "w11",
+   "title": "Очистить пляж",
+   "description": "Нужно собрать мусор с пляжа.",
+   "difficulty": "MEDIUM",
+   "isPhysical": true
+  },
+  {
+   "id": "w12",
+   "title": "Разложить книги",
+   "description": "Отсортируй книги в библиотеке по категориям.",
+   "difficulty": "EASY",
+   "isPhysical": false
+  },
+  {
+   "id": "w13",
+   "title": "Нарисуй открытку",
+   "description": "У вашего друга день рождения и каждый готовит подарок.",
+   "difficulty": "EASY",
+   "isPhysical": true
+  },
+  {
+   "id": "w14",
+   "title": "Поработай в аптеке",
+   "description": "Помоги сотрудникам аптеки с выдачей лекрств больным.",
+   "difficulty": "HARD",
+   "isPhysical": true
+  },
+  {
+   "id": "w15",
+   "title": "Собрать ягоды",
+   "description": "Собери ягоды в корзинку.",
+   "difficulty": "EASY",
+   "isPhysical": true
+  },
+  {
+   "id": "w16",
+   "title": "Покрасить стену",
+   "description": "Разрисуй стены яркими красками.",
+   "difficulty": "EASY",
+   "isPhysical": true
+  },
+  {
+   "id": "w17",
+   "title": "Посадить цветы",
+   "description": "Укрась сад новыми саженцами.",
+   "difficulty": "MEDIUM",
+   "isPhysical": true
+  },
+  {
+   "id": "w18",
+   "title": "Работать в мастерской",
+   "description": "Все строят табуретки, и ты не отставай!",
+   "difficulty": "HARD",
+   "isPhysical": true
+  },
+  {
+   "id": "w19",
+   "title": "Помыть посуду",
+   "description": "Много посуды испачкалось на празднике, нужно помочь.",
+   "difficulty": "MEDIUM",
+   "isPhysical": false
+  },
+  {
+   "id": "w20",
+   "title": "Повесить полки",
+   "description": "Повесь полки в новом кабинете друзей.",
+   "difficulty": "EASY",
+   "isPhysical": false
+  },
+  {
+   "id": "w21",
+   "title": "Построить скворечник",
+   "description": "Все вместе строим домик для нашей птички.",
+   "difficulty": "MEDIUM",
+   "isPhysical": true
+  }
+ ]
+}

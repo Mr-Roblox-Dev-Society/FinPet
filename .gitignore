@@ -1,0 +1,24 @@
+# Build outputs
+build/
+*/build/
+app/build/
+
+# Gradle caches
+.gradle/
+
+# Local machine config (contains personal SDK paths)
+local.properties
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# Logs & temp
+*.log
+*.tmp
+
+# Signing keys — never commit!
+*.keystore
+*.jks
+keystore.properties

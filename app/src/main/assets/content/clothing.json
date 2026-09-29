@@ -1,0 +1,119 @@
+{
+  "clothing": [
+    {
+      "id": "summer_tshirt", "season": "SUMMER", "title": "Футболка", "basePrice": 80, "isMandatory": true,
+      "variants": [
+        {"id": "summer_tshirt_base", "title": "Базовая жёлтая", "colorHex": "#FFD54F", "price": 0, "isBase": true},
+        {"id": "summer_tshirt_1", "title": "Полоски", "colorHex": "#4FC3F7", "price": 40, "isBase": false},
+        {"id": "summer_tshirt_2", "title": "Горошек", "colorHex": "#FF8A65", "price": 40, "isBase": false},
+        {"id": "summer_tshirt_3", "title": "Звёзды", "colorHex": "#BA68C8", "price": 40, "isBase": false},
+        {"id": "summer_tshirt_4", "title": "Лимонный", "colorHex": "#AED581", "price": 40, "isBase": false},
+        {"id": "summer_tshirt_5", "title": "Коралловый", "colorHex": "#F06292", "price": 40, "isBase": false}
+      ]
+    },
+    {
+      "id": "summer_shorts", "season": "SUMMER", "title": "Шорты", "basePrice": 90, "isMandatory": true,
+      "variants": [
+        {"id": "summer_shorts_base", "title": "Базовые синие", "colorHex": "#42A5F5", "price": 0, "isBase": true},
+        {"id": "summer_shorts_1", "title": "Зелёные", "colorHex": "#66BB6A", "price": 45, "isBase": false},
+        {"id": "summer_shorts_2", "title": "Оранжевые", "colorHex": "#FFA726", "price": 45, "isBase": false},
+        {"id": "summer_shorts_3", "title": "Бирюзовые", "colorHex": "#26C6DA", "price": 45, "isBase": false},
+        {"id": "summer_shorts_4", "title": "Красные", "colorHex": "#EF5350", "price": 45, "isBase": false},
+        {"id": "summer_shorts_5", "title": "Фиолетовые", "colorHex": "#AB47BC", "price": 45, "isBase": false}
+      ]
+    },
+    {
+      "id": "summer_cap", "season": "SUMMER", "title": "Кепка", "basePrice": 70, "isMandatory": true,
+      "variants": [
+        {"id": "summer_cap_base", "title": "Базовая красная", "colorHex": "#EF5350", "price": 0, "isBase": true},
+        {"id": "summer_cap_1", "title": "Синяя", "colorHex": "#5C6BC0", "price": 35, "isBase": false},
+        {"id": "summer_cap_2", "title": "Жёлтая", "colorHex": "#FFEE58", "price": 35, "isBase": false},
+        {"id": "summer_cap_3", "title": "Зелёная", "colorHex": "#9CCC65", "price": 35, "isBase": false},
+        {"id": "summer_cap_4", "title": "Розовая", "colorHex": "#F48FB1", "price": 35, "isBase": false},
+        {"id": "summer_cap_5", "title": "Белая", "colorHex": "#FAFAFA", "price": 35, "isBase": false}
+      ]
+    },
+    {
+      "id": "autumn_jacket", "season": "AUTUMN", "title": "Ветровка", "basePrice": 200, "isMandatory": true,
+      "variants": [
+        {"id": "autumn_jacket_base", "title": "Базовая оранжевая", "colorHex": "#FF9800", "price": 0, "isBase": true},
+        {"id": "autumn_jacket_1", "title": "Бордовая", "colorHex": "#C62828", "price": 100, "isBase": false},
+        {"id": "autumn_jacket_2", "title": "Хаки", "colorHex": "#8D6E63", "price": 100, "isBase": false},
+        {"id": "autumn_jacket_3", "title": "Синяя", "colorHex": "#1565C0", "price": 100, "isBase": false},
+        {"id": "autumn_jacket_4", "title": "Горчичная", "colorHex": "#F9A825", "price": 100, "isBase": false}
+      ]
+    },
+    {
+      "id": "autumn_sneakers", "season": "AUTUMN", "title": "Кеды", "basePrice": 180, "isMandatory": true,
+      "variants": [
+        {"id": "autumn_sneakers_base", "title": "Базовые серые", "colorHex": "#90A4AE", "price": 0, "isBase": true},
+        {"id": "autumn_sneakers_1", "title": "Красные", "colorHex": "#E53935", "price": 90, "isBase": false},
+        {"id": "autumn_sneakers_2", "title": "Синие", "colorHex": "#1E88E5", "price": 90, "isBase": false},
+        {"id": "autumn_sneakers_3", "title": "Зелёные", "colorHex": "#43A047", "price": 90, "isBase": false},
+        {"id": "autumn_sneakers_4", "title": "Чёрные", "colorHex": "#424242", "price": 90, "isBase": false}
+      ]
+    },
+    {
+      "id": "winter_coat", "season": "WINTER", "title": "Куртка", "basePrice": 300, "isMandatory": true,
+      "variants": [
+        {"id": "winter_coat_base", "title": "Базовая синяя", "colorHex": "#1976D2", "price": 0, "isBase": true},
+        {"id": "winter_coat_1", "title": "Красная", "colorHex": "#D32F2F", "price": 150, "isBase": false},
+        {"id": "winter_coat_2", "title": "Зелёная", "colorHex": "#388E3C", "price": 150, "isBase": false},
+        {"id": "winter_coat_3", "title": "Фиолетовая", "colorHex": "#7B1FA2", "price": 150, "isBase": false},
+        {"id": "winter_coat_4", "title": "Бирюзовая", "colorHex": "#00838F", "price": 150, "isBase": false}
+      ]
+    },
+    {
+      "id": "winter_boots", "season": "WINTER", "title": "Ботинки", "basePrice": 250, "isMandatory": true,
+      "variants": [
+        {"id": "winter_boots_base", "title": "Базовые коричневые", "colorHex": "#6D4C41", "price": 0, "isBase": true},
+        {"id": "winter_boots_1", "title": "Чёрные", "colorHex": "#212121", "price": 125, "isBase": false},
+        {"id": "winter_boots_2", "title": "Серые", "colorHex": "#757575", "price": 125, "isBase": false},
+        {"id": "winter_boots_3", "title": "Синие", "colorHex": "#283593", "price": 125, "isBase": false},
+        {"id": "winter_boots_4", "title": "Бордовые", "colorHex": "#880E4F", "price": 125, "isBase": false}
+      ]
+    },
+    {
+      "id": "winter_hat", "season": "WINTER", "title": "Шапка", "basePrice": 80, "isMandatory": true,
+      "variants": [
+        {"id": "winter_hat_base", "title": "Базовая белая", "colorHex": "#ECEFF1", "price": 0, "isBase": true},
+        {"id": "winter_hat_1", "title": "Красная", "colorHex": "#E53935", "price": 40, "isBase": false},
+        {"id": "winter_hat_2", "title": "Синяя", "colorHex": "#1E88E5", "price": 40, "isBase": false},
+        {"id": "winter_hat_3", "title": "Зелёная", "colorHex": "#43A047", "price": 40, "isBase": false},
+        {"id": "winter_hat_4", "title": "Жёлтая", "colorHex": "#FDD835", "price": 40, "isBase": false},
+        {"id": "winter_hat_5", "title": "Розовая", "colorHex": "#EC407A", "price": 40, "isBase": false}
+      ]
+    },
+    {
+      "id": "winter_scarf", "season": "WINTER", "title": "Шарф", "basePrice": 70, "isMandatory": true,
+      "variants": [
+        {"id": "winter_scarf_base", "title": "Базовый красный", "colorHex": "#EF5350", "price": 0, "isBase": true},
+        {"id": "winter_scarf_1", "title": "Синий", "colorHex": "#42A5F5", "price": 35, "isBase": false},
+        {"id": "winter_scarf_2", "title": "Зелёный", "colorHex": "#66BB6A", "price": 35, "isBase": false},
+        {"id": "winter_scarf_3", "title": "Полосатый", "colorHex": "#FFA726", "price": 35, "isBase": false},
+        {"id": "winter_scarf_4", "title": "Фиолетовый", "colorHex": "#AB47BC", "price": 35, "isBase": false},
+        {"id": "winter_scarf_5", "title": "Бирюзовый", "colorHex": "#26C6DA", "price": 35, "isBase": false}
+      ]
+    },
+    {
+      "id": "spring_jacket", "season": "SPRING", "title": "Куртка", "basePrice": 180, "isMandatory": true,
+      "variants": [
+        {"id": "spring_jacket_base", "title": "Базовая салатовая", "colorHex": "#AED581", "price": 0, "isBase": true},
+        {"id": "spring_jacket_1", "title": "Голубая", "colorHex": "#4FC3F7", "price": 90, "isBase": false},
+        {"id": "spring_jacket_2", "title": "Розовая", "colorHex": "#F48FB1", "price": 90, "isBase": false},
+        {"id": "spring_jacket_3", "title": "Жёлтая", "colorHex": "#FFF176", "price": 90, "isBase": false},
+        {"id": "spring_jacket_4", "title": "Сиреневая", "colorHex": "#CE93D8", "price": 90, "isBase": false}
+      ]
+    },
+    {
+      "id": "spring_boots", "season": "SPRING", "title": "Ботинки", "basePrice": 150, "isMandatory": true,
+      "variants": [
+        {"id": "spring_boots_base", "title": "Базовые бежевые", "colorHex": "#D7CCC8", "price": 0, "isBase": true},
+        {"id": "spring_boots_1", "title": "Зелёные", "colorHex": "#81C784", "price": 75, "isBase": false},
+        {"id": "spring_boots_2", "title": "Синие", "colorHex": "#64B5F6", "price": 75, "isBase": false},
+        {"id": "spring_boots_3", "title": "Коричневые", "colorHex": "#A1887F", "price": 75, "isBase": false},
+        {"id": "spring_boots_4", "title": "Красные", "colorHex": "#E57373", "price": 75, "isBase": false}
+      ]
+    }
+  ]
+}

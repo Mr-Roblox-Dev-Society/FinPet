@@ -1,0 +1,752 @@
+{
+ "tasks": [
+  {
+   "id": "t_budget_1",
+   "theme": "BUDGET",
+   "title": "Раздели монеты",
+   "situation": "У тебя 400 монет. Нужно поесть (100), хочется мяч (150) и отложить на цель.",
+   "type": "DISTRIBUTE",
+   "distributeTotal": 400,
+   "options": [
+    {
+     "id": "ok",
+     "text": "Обязательные 100, необязательные 150, накопления 150",
+     "isCorrect": true
+    },
+    {
+     "id": "bad",
+     "text": "Обязательные 0, необязательные 400, накопления 0",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "Сначала закрываем обязательное (еда), потом желания и копим. Расходы не больше доходов.",
+   "wrongExplanation": "Если всё потратить на желания, питомцу нечего будет есть. Обязательное — в первую очередь."
+  },
+  {
+   "id": "t_budget_2",
+   "theme": "BUDGET",
+   "title": "План на день",
+   "situation": "Баланс 300. Налог скоро 150, еда 100. Сколько максимум можно на развлечение?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "50",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "200",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "300",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "После еды и налога останется 50 — их и можно потратить на необязательное.",
+   "wrongExplanation": "Сначала посчитай обязательные: 100+150=250. Остаток 50."
+  },
+  {
+   "id": "t_save_1",
+   "theme": "SAVINGS",
+   "title": "Отложи понемногу",
+   "situation": "Цель 1000. Ты можешь откладывать по 50 каждый период. Что верно?",
+   "type": "SAVE_AMOUNT",
+   "options": [
+    {
+     "id": "a",
+     "text": "Отложить 50 сейчас — правильный шаг",
+     "isCorrect": true,
+     "consequenceBalance": -50
+    },
+    {
+     "id": "b",
+     "text": "Ждать, пока будет сразу 1000",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "Маленькие регулярные переводы приближают цель. Минимум перевода — 50.",
+   "wrongExplanation": "Ждать большой суммы дольше. Лучше откладывать регулярно."
+  },
+  {
+   "id": "t_save_2",
+   "theme": "SAVINGS",
+   "title": "Снятие из копилки",
+   "situation": "Ты почти накопил на цель, но хочешь купить наклейки. Что сделать?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "Подумать и подтвердить снятие, если очень нужно",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "Снять всё бездумно",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "Никогда не снимать, даже на лекарство",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "Снятие возможно после подтверждения. Срок цели может вырасти — это нормально.",
+   "wrongExplanation": "Важно понимать последствия. Иногда снятие нужно (например, лекарство), но решение должно быть осознанным."
+  },
+  {
+   "id": "t_pay_1",
+   "theme": "PAYMENTS",
+   "title": "Обязательное или желание?",
+   "situation": "Выбери покупку, без которой питомец может заболеть.",
+   "type": "PICK_PURCHASE",
+   "options": [
+    {
+     "id": "food",
+     "text": "Еда (100)",
+     "isCorrect": true
+    },
+    {
+     "id": "ball",
+     "text": "Мяч (150)",
+     "isCorrect": false
+    },
+    {
+     "id": "stickers",
+     "text": "Наклейки (80)",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "Еда — обязательный расход. Мяч и наклейки — по желанию.",
+   "wrongExplanation": "Игрушки приятны, но еда важнее для здоровья питомца."
+  },
+  {
+   "id": "t_pay_2",
+   "theme": "PAYMENTS",
+   "title": "Одежда по сезону",
+   "situation": "Зима. Что обязательно купить, а что — по желанию?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "Базовая куртка обязательна, яркий цвет — по желанию",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "Только красивый цвет, база не нужна",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "Одежда никогда не нужна",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "Базовый комплект сезона — обязательный расход. Дизайны и цвета — необязательные.",
+   "wrongExplanation": "Без базовой зимней одежды питомец может заболеть. Цвета — для радости, не вместо базы."
+  },
+  {
+   "id": "t_budget_3",
+   "theme": "BUDGET",
+   "title": "Считаем доход",
+   "situation": "За период: вход +100, работа +200, награда за тест +50. Сколько всего монет пришло?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "300",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "250",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "350",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "Доходы складываются: 100+200+50=300.",
+   "wrongExplanation": "Сложи все поступления: 100+200+50=300."
+  },
+  {
+   "id": "t_budget_4",
+   "theme": "BUDGET",
+   "title": "Распредели 500",
+   "situation": "Баланс 500. Еда 100, налог 150 — обязательно. Остальное подели между желанием и копилкой.",
+   "type": "DISTRIBUTE",
+   "distributeTotal": 500,
+   "options": [
+    {
+     "id": "ok",
+     "text": "Обязательные 250, необязательные 100, накопления 150",
+     "isCorrect": true
+    },
+    {
+     "id": "bad",
+     "text": "Обязательные 100, необязательные 400, накопления 0",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "Сначала закрываем обязательные 250 (еда+налог), остаток делим между желанием и копилкой.",
+   "wrongExplanation": "Обязательных расходов на 250, а не на 100. Их нужно закрыть первыми."
+  },
+  {
+   "id": "t_save_3",
+   "theme": "SAVINGS",
+   "title": "Сколько осталось до цели",
+   "situation": "Цель 800, в копилке уже 500. Сколько ещё отложить?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "300",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "500",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "800",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "800−500=300. Это шесть переводов по 50.",
+   "wrongExplanation": "Вычти то, что уже накоплено: 800−500=300."
+  },
+  {
+   "id": "t_save_4",
+   "theme": "SAVINGS",
+   "title": "Выбери первый шаг к цели",
+   "situation": "Хочешь накопить на большой рюкзак. С чего начать?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "Поставить цель с суммой и сроком",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "Купить всё самое дорогое сразу",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "Ждать волшебства",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "Любая цель начинается с формулировки: что, сколько, к когда.",
+   "wrongExplanation": "Без конкретной цели копить сложно. Сначала — сумма и срок."
+  },
+  {
+   "id": "t_pay_3",
+   "theme": "PAYMENTS",
+   "title": "Три покупки — одна лишняя",
+   "situation": "Мама дала список: лекарство (200), зимняя куртка (300), конфеты (90). Баланс 550. Что купить?",
+   "type": "PICK_PURCHASE",
+   "options": [
+    {
+     "id": "med",
+     "text": "Лекарство и куртку, конфеты — потом",
+     "isCorrect": true
+    },
+    {
+     "id": "all",
+     "text": "Все три покупки сразу",
+     "isCorrect": false
+    },
+    {
+     "id": "candy",
+     "text": "Только конфеты",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "200+300=500 — обе обязательные покупки помещаются. Конфеты (необязательное) — в следующий раз.",
+   "wrongExplanation": "На всё трёх не хватит (590 > 550), а без лекарства и куртки питомцу будет плохо."
+  },
+  {
+   "id": "t_pay_4",
+   "theme": "PAYMENTS",
+   "title": "Скидка или лишняя трата?",
+   "situation": "Яркая шапка стоит 180 вместо обычной за 120. Питомцу нужна тёплая шапка. Что выбрать, если хочется сэкономить?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "Обычную шапку: разница 60 уйдёт в копилку",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "Никакую — шапки не нужны",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "Две шапки сразу",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "База сезона обязательна, яркий дизайн — желание. Обычная шапка закрывает нужду, 60 можно отложить.",
+   "wrongExplanation": "Без тёплой шапки питомец замёрзнет, а две шапки — лишняя трата."
+  },
+  {
+   "id": "t_budget_5",
+   "theme": "BUDGET",
+   "title": "Распредели 300",
+   "situation": "Доход 300: обед 100, сладость 60, остальное на цель.",
+   "type": "DISTRIBUTE",
+   "options": [
+    {
+     "id": "a",
+     "text": "Обязательные 100, желания 60, накопления 140",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "Обязательные 0, желания 300, накопления 0",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "Сначала обязательное, затем желания, остаток копим.",
+   "wrongExplanation": "Без обеда питомец проголодается, а копить нечего."
+  },
+  {
+   "id": "t_budget_6",
+   "theme": "BUDGET",
+   "title": "Сколько останется",
+   "situation": "Баланс 250. Налог 100 и корм 50. Сколько свободных монет?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "100",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "150",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "250",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "250−100−50=100.",
+   "wrongExplanation": "Не вычли обязательные платежи — остаток мнимый."
+  },
+  {
+   "id": "t_budget_7",
+   "theme": "BUDGET",
+   "title": "План на 2 дня",
+   "situation": "За два дня доход 400. Обязательные расходы 250. План желаний 200. Где ошибка?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "План желаний больше остатка",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "Ошибки нет",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "Нужно больше обязательных",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "Остаток 150, а желаний наметили 200.",
+   "wrongExplanation": "Сравнивай остатки и желания до планирования."
+  },
+  {
+   "id": "t_budget_8",
+   "theme": "BUDGET",
+   "title": "Что первое",
+   "situation": "Утро, баланс 180: корм 100, мяч 90, цель. Порядок действий?",
+   "type": "DISTRIBUTE",
+   "options": [
+    {
+     "id": "a",
+     "text": "Корм 100, цель 80, мяч позже",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "Мяч 90, корм 90, цель 0",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "Корм — обязательное, он первый.",
+   "wrongExplanation": "Желание впереди еды ломает приоритеты."
+  },
+  {
+   "id": "t_budget_9",
+   "theme": "BUDGET",
+   "title": "Считаем прибыль",
+   "situation": "Работа принесла 200, материалы стоили 50. Чистый доход?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "150",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "200",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "50",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "200−50=150.",
+   "wrongExplanation": "Доход считают за вычетом затрат."
+  },
+  {
+   "id": "t_budget_10",
+   "theme": "BUDGET",
+   "title": "Неделя по числам",
+   "situation": "Доход 500 в неделю. Обязательное 350. Сколько максимум на желания?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "150",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "350",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "500",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "500−350=150.",
+   "wrongExplanation": "Желания ограничены остатком после обязательного."
+  },
+  {
+   "id": "t_save_5",
+   "theme": "SAVINGS",
+   "title": "Отложи половину",
+   "situation": "Баланс 400. Решил отложить половину на цель. Сколько в копилку?",
+   "type": "SAVE_AMOUNT",
+   "options": [
+    {
+     "id": "a",
+     "text": "200",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "400",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "100",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "Половина от 400 = 200.",
+   "wrongExplanation": "Половина — это делим на два."
+  },
+  {
+   "id": "t_save_6",
+   "theme": "SAVINGS",
+   "title": "Три дня по чуть-чуть",
+   "situation": "Каждый день откладываешь по 60. Сколько за 3 дня?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "180",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "60",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "120",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "60×3=180.",
+   "wrongExplanation": "Повторяющиеся накопления складываются."
+  },
+  {
+   "id": "t_save_7",
+   "theme": "SAVINGS",
+   "title": "Цель близко",
+   "situation": "Цель 500, в копилке 420. Сколько осталось?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "80",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "420",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "500",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "500−420=80, финиш рядом!",
+   "wrongExplanation": "Осталось совсем чуть-чуть — не сдавайся."
+  },
+  {
+   "id": "t_save_8",
+   "theme": "SAVINGS",
+   "title": "Сорвать или нет",
+   "situation": "В копилке 300 на цель. Срочно надо 120 на корм. Решение?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "Взять 120, потом восполнить",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "Не брать, питомцу голодать",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "Взять все 300",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "Обязательное важнее цели: берём нужное и возвращаем.",
+   "wrongExplanation": "Цель важна, но здоровье питомца важнее."
+  },
+  {
+   "id": "t_save_9",
+   "theme": "SAVINGS",
+   "title": "Сколько до цели",
+   "situation": "Цель 800, есть 300. Откладывать по 100 в день. Через сколько дней цель?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "5",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "3",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "8",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "(800−300)/100=5 дней.",
+   "wrongExplanation": "Раздели остаток на дневное накопление."
+  },
+  {
+   "id": "t_save_10",
+   "theme": "SAVINGS",
+   "title": "Первый шаг",
+   "situation": "Цель — велосипед за 1000. Что сделать сегодня?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "Отложить первые 50",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "Ждать завтра",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "Купить сразу",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "Любая большая цель начинается с первого шага.",
+   "wrongExplanation": "Шаг сегодня лучше ожидания."
+  },
+  {
+   "id": "t_pay_5",
+   "theme": "PAYMENTS",
+   "title": "Лишний предмет",
+   "situation": "В корзине: хлеб, молоко, лекарство, наклейки. Что лишнее?",
+   "type": "PICK_PURCHASE",
+   "options": [
+    {
+     "id": "a",
+     "text": "Наклейки",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "Хлеб",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "Лекарство",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "Наклейки — желание, остальное обязательно.",
+   "wrongExplanation": "Сначала обязательное, наклейки потом."
+  },
+  {
+   "id": "t_pay_6",
+   "theme": "PAYMENTS",
+   "title": "Магазин одежды",
+   "situation": "Питомцу холодно. Есть куртка (150) и бантик (80). Покупка первой?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "Куртка",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "Бантик",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "Ничего",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "Тепло — потребность, бантик — украшение.",
+   "wrongExplanation": "Согревающая одежда первее украшений."
+  },
+  {
+   "id": "t_pay_7",
+   "theme": "PAYMENTS",
+   "title": "Акция на удочку",
+   "situation": "Удочка 120 со скидкой 40%. Питомец не рыбачит. Брать?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "Не брать",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "Брать — скидка!",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "Скидка на ненужное — не выгода.",
+   "wrongExplanation": "Ненужная вещь по любой цене — лишняя трата."
+  },
+  {
+   "id": "t_pay_8",
+   "theme": "PAYMENTS",
+   "title": "Просроченный купон",
+   "situation": "Еда за 90. В кассе купон: еда за 70, но срок вышел вчера. Платим?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "90 без купона",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "70 по просроченному купону",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "Просроченный купон недействителен.",
+   "wrongExplanation": "Срок действия купона важен."
+  },
+  {
+   "id": "t_pay_9",
+   "theme": "PAYMENTS",
+   "title": "Сдача",
+   "situation": "Корм 130, дал 200. Проверь сдачу.",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "70",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "30",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "130",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "200−130=70.",
+   "wrongExplanation": "Сдачу проверяем сразу."
+  },
+  {
+   "id": "t_pay_10",
+   "theme": "PAYMENTS",
+   "title": "Три прилавка",
+   "situation": "Нужен мяч. Цена: А—100, Б—80 (но старый), В—90 новый. Выбор?",
+   "type": "CHOICE",
+   "options": [
+    {
+     "id": "a",
+     "text": "В за 90",
+     "isCorrect": true
+    },
+    {
+     "id": "b",
+     "text": "А за 100",
+     "isCorrect": false
+    },
+    {
+     "id": "c",
+     "text": "Б за 80",
+     "isCorrect": false
+    }
+   ],
+   "correctExplanation": "Сравнили цену и качество: В оптимален.",
+   "wrongExplanation": "Самая низкая цена не всегда лучшая покупка."
+  }
+ ]
+}
